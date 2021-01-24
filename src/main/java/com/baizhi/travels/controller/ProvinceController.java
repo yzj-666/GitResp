@@ -35,11 +35,11 @@ public class ProvinceController {
         map.put("page", page);
         return map;
     }
-    /*public List<Province> findAll(){
+    /*public Map<String,Object> findAll(){
+        HashMap<String,Object> map = new HashMap<>();
         List<Province> provinces = provinceService.findAll();
-        for (Province province : provinces) {
-            System.out.println(province.getName());
-        }
-        return provinces;
+        Integer totals=provinceService.findTotals();
+        map.put("provinces",provinces);
+        return map;
     }*/
 }
